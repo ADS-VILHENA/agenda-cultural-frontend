@@ -1,0 +1,129 @@
+/* #page_login_header{
+    width: 100vw;
+}
+.page_header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(122, 84, 245);
+    margin:0;
+    padding:0;
+}
+.imgLogoIni{
+    width: 200px;
+    height: 100px;
+    float: right;
+}
+.page_login_main{
+    max-width: 1200px;
+} */
+
+/* teste para a pagina inicial */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*tiutlo*/
+
+.menu{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    font-family: poppins;
+  }
+/* .imgLogoIni{
+    width: 30rem;
+    height: 100%;
+    float: right; 
+}
+.header{
+    position: absolute;
+    width: 100%;
+    height: 136px;
+    left: 0px;
+    top: 0px;
+    background-color:#6147d4;
+}
+.header_top{
+    height: 40px;
+    margin-top: 136px;
+    margin-bottom: 5px;
+    background-color:#0b201cc4;
+} */
+.page_main{
+    max-width: 1200px;  
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    scroll-margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(207, 207, 203, 0.082);
+}
+.page_main_top{
+    margin-top: 10px;
+}
+.page_main h5{
+    text-align: center;
+    margin-left: 15px;
+    font-size:25px;
+    color: rgb(37, 56, 226);
+}
+.page_main_block{
+    border: 1px solid;
+    border-radius: 55px;
+    padding:60px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 2px 5px 9px;
+    
+}
+@media(max-width:900px){
+   
+    .page_main_top{
+        margin-top:60px;
+    }
+    .page_main_block{
+        border-radius: 0;
+        
+        margin-left: 15px;
+        margin-right: 15px;
+        padding:auto;
+        margin-top: -5px;
+        margin-bottom: 20px;
+    }
+    .page_main h5{
+        margin-left: auto;
+    }
+}
+
+@media(max-width:700px){
+    .page_main{
+        margin-bottom: -120px;
+    }
+    .page_main_top{
+        margin-top: 190px;
+    }
+    .page_main_block{
+        border-radius: 0;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding:auto;
+        margin-top: auto;
+        margin-bottom: 6px;
+    }
+    .page_main h5{
+        margin-left: auto;
+    }
+}
+.page_main_block:hover{
+    background-color:whitesmoke;
+    box-shadow: 3px 6px 10px;
+    color: rgb(200, 193, 193);
+}
+.main_section:hover {
+    border-color: crimson;
+}

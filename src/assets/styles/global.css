@@ -1,0 +1,23 @@
+:root{
+    font-size: 60%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, main, #root{
+    height: 100vh;
+}
+main{
+    background-color: white;
+}
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main,input,button,textarea{
+    font: 500 1.6rem Poppins;
+}
+
