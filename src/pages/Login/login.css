@@ -37,7 +37,10 @@ label{
     font-size: 23px;
     font-style: oblique;
 }
-.container input{
+.final{
+    margin-left: 10px;
+}
+.container2 input{
     border: 1px solid #d5dae2;
     border-radius: 5px;
     padding-right: 5px;

@@ -1,0 +1,35 @@
+.page_main{
+    max-width: 1200px;  
+    display: flex;
+    flex-direction: row;
+    margin-top: -76px;
+    scroll-margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(207, 207, 203, 0.082);
+}
+
+.card_pad{
+    display: flex;
+    margin-top: -210px;
+   
+}
+.card_m{
+    margin-left: 50px;
+}
+.card_border{
+    border-radius: 19px;
+}
+.card_border_img{
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+}
+.titulo_evento{
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+

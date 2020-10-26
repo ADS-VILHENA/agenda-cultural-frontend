@@ -1,4 +1,4 @@
-.page_main_even3{
+.page_main_even{
     max-width: 1200px;  
     display: flex;
     flex-direction: row;
@@ -6,13 +6,15 @@
     scroll-margin-bottom: 15px;
     align-items: center;
     justify-content: center;
-    background-color: rgba(207, 207, 203, 0.082);
+    background-color: rgba(243, 243, 243, 0.075);
 }
-#page-evento3 .main{
+
+
+#page-evento .main{
     width: 100%;
     max-width: 1200px;
 }
-#page-evento3 input{
+#page-evento input{
     border-radius: 5px;
     margin-left: 5px;
     width: 700px;
@@ -21,7 +23,7 @@
     border: 1px solid rgb(212, 217, 221);
     background-color: rgb(244, 245, 246);
 }
-#page-evento3 select{
+#page-evento select{
     border-radius: 5px;
     margin-left: 5px;
     width: 700px;
@@ -31,25 +33,25 @@
     border: 1px solid rgb(212, 217, 221);
     background-color: rgb(244, 245, 246);
 }
-#page-evento3 p{
+
+#page-evento p{
     display: table-row;
 }
-#page-evento3 label{
+#page-evento label{
     display: table-cell;
 }
-#page-evento3 input{
+#page-evento input{
     display: table-cell;
 }
-#page-evento3 input:hover{
+#page-evento input:hover{
     box-shadow: 0.1px 0.1px 0.1px 0.1px;
     border-color: rgba(96, 139, 231, 0.52);
     outline-color: rgb(51, 179, 230);
 }
-#page-evento3 fieldset{
+fieldset{
     border: 0; 
-    margin-top: -400px;
 }
-#page-evento3 legend{
+legend{
     font: 700 3.4rem Archivo;
     color: rgb(50, 52, 63);
     text-align: center;
@@ -72,10 +74,8 @@
     margin-top: 30px;
     margin-bottom: 24px;
 }
-.btn_evento:hover{
-    background-color: white;
-    color:black;
-}
 .btn_evento:first-of-type{
     margin-left: 600px;
-}   
+}
+
+

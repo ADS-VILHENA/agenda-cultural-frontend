@@ -9,9 +9,7 @@
 html, main, #root{
     height: 100vh;
 }
-main{
-    background-color: white;
-}
+
 #root{
     display: flex;
     align-items: center;

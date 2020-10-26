@@ -1,52 +1,68 @@
-import React from 'react'
+import React, { FormEvent, useState } from 'react'
 import PageHeader from '../../components/Header';
+import PageMenu from '../../components/MenuLateral';
+import api from '../../services/api';
+import './organizador.css'
 
 function Pageorganizador(){
+
+    const [nome, setName] = useState('');
+    const [telefone, setTelefone] = useState('');
+    const [endereco, setEndereco] = useState('');
+    const [email, setEmail] = useState('');
+
+
+    function handleExibir(e: FormEvent){
+        e.preventDefault();
+        api.post('organizador', {
+            nome,
+            telefone,
+            endereco,
+            email,
+        }).then(() => {
+            alert('Cadastro alterado com sucesso!');
+        }).catch(() => {
+            alert('Erro de alteração!');
+        })
+    }
     return(
         <div>
             <div>
                 <PageHeader />
-            </div> 
+            </div>
             <div>
-                <div className="main_titulo ">
-                    <h1>Organizadores:</h1>
-                </div> 
-            <section >
-                <div>
-                    <form className="testet">
-                        <div>
-                            <label className="main_formulario_label">Nome do evento:</label><br/>
-                            <input type="text" className="main_formulario_input col"/>
-                        </div>
-                        <div>
-                            <label className="main_formulario_label">Data de realização:</label><br/>
-                            <input type="date" className="main_formulario_input col"/>
-                        </div>
-                        <div>
-                            <label className="main_formulario_label">Local:</label><br/>
-                            <input type="text" className="main_formulario_input col"/>
-                        </div>
-                        <div>
-                            <label className="main_formulario_label">Categoria:</label><br/>
-                            <input type="text" className="main_formulario_input col"/>
-                        </div>
-                        <div>
-                            <label className="main_formulario_label">Organizador:</label><br/>
-                            <input type="text" className="main_formulario_input col"/>
-                        </div>
-                        <div>
-                            <label className="main_formulario_label">Logo do evento:</label><br/>
-                            <input type="file" className="form-control-file main_formulario_input"></input>
-                        </div>
-                    </form>
-                    <div className="main_button_conf">
-                        <button type="button" className="btn btn-primary btn-lg main_button">Salvar</button>
-                        <button type="button" className="btn btn-secondary btn-lg main_button">Cancelar</button>
-                    </div>
-                 </div>
-            </section>
-        </div>
-    </div>
+                <PageMenu />
+            </div>
+            <main id="page-evento3" className="page_main_even3">  
+                
+                <fieldset>
+                    <legend>Meus Dados</legend>
+                    <form className="form">
+                        <p>
+                            <label htmlFor="">Nome:</label>
+                            <input type="text"/>
+                        </p>
+                        <p>
+                            <label htmlFor="">Telefone:</label>
+                            <input type="text" />
+                        </p>
+                        <p>
+                            <label htmlFor="">Endereço:</label> 
+                            <input type="text" />
+                        </p>
+                        <p>
+                            <label htmlFor="">Email:</label> 
+                            <input type="text" />
+                        </p>
+                        
+                        
+                    </form> 
+                      
+                    <button className="btn_evento">Salvar</button>
+                    <button className="btn_evento">Cancelar</button>                
+                </fieldset>    
+            </main>
+            </div>
     )
 }
 

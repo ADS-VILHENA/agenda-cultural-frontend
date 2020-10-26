@@ -1,15 +1,21 @@
-import React from 'react';
+import React  from 'react';
 import {Link} from 'react-router-dom';
-import imgta from '../../assets/LogoMatheus/LogoMatheus.png';
 import './inicio.css';
 import PageHeader from '../../components/Header';
+import PageMenu from '../../components/MenuLateral';
 
 function PageInicio() {
     return (
         <div>
-            <PageHeader />
-            <main className="page_main page_main_top"> 
-                <div className="">
+            <div>
+                <PageHeader />
+            </div>
+            <div>
+                <PageMenu /> 
+            </div>
+            <main className="page_main3 page_main_top"> 
+                 
+                <div>
                 <section >
                     <div className=" row">
                         <div className="col-sm-6">

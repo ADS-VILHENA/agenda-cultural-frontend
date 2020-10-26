@@ -1,8 +1,7 @@
 import React  from 'react'
 import PageHeader from '../../components/Header';
-import './Dadoseventos.css'
+import './eventos.css'
 import PageMenu from '../../components/MenuLateral';
-import { string } from 'yup';
 
 function PageEventos(){
     return(
@@ -16,16 +15,16 @@ function PageEventos(){
                 <main id="page-evento" className="page_main_even">  
                 
                     <fieldset>
-                        <legend>Cadastro de eventos</legend>
+                        <legend>Evento</legend>
                         <form className="form">
                             <p>
                                 <label htmlFor="">Titulo:</label>
                                 <input type="text"/>
                             </p>
                             <p>
-                                <label  htmlFor="">Descrição:</label>
-                                <textarea  /> 
-                            </p>                            
+                                <label htmlFor="">Descrição:</label>
+                                <textarea />
+                            </p>
                             <p>
                                 <label htmlFor="">Endereço:</label> 
                                 <input type="text" />
@@ -54,7 +53,6 @@ function PageEventos(){
                                     <option value="valor"></option>
                                 </select> 
                             </p>
-
                             <p>
                                 <label htmlFor="">Logo</label>
                                 <input type="file" />

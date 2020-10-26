@@ -11,6 +11,9 @@
     border-radius: 19px;
     align-items: center;
 }
+.final{
+    margin-left: 20px;
+}
 /* .imgLogo{
     position: relative;
     width: 100%;
@@ -31,23 +34,24 @@
 .container_form{
     padding-left: 20px;  
     align-content: center;
-    margin-top: 2%;
+    margin-top: 35px;
 }
+
 label{
-    font-size: 23px;
+    font-size: 18px;
     font-style: oblique;
 }
 .container input{
-    border: 1px solid #d5dae2;
+    border: 1px solid #637592;
     border-radius: 5px;
     padding-right: 5px;
     margin-bottom: 10px;
-    min-height: 45px;
+    min-height: 32px;
     font-size: 13px;
     line-height: 15;
     font-weight: normal;
     max-width: 356px;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 .container button{
     padding: 13px 20px 12px;
