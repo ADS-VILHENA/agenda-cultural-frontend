@@ -21,14 +21,22 @@ function Login() {
             api.post('/organizador/login',  {
             email,
             senha,
-            }).then(() => {
+            }).then(response => {
+                localStorage.setItem('token', response.data.token);
                 history.push('/Categorias')
             })
-            // .then(resp => console.log(resp))
+
+            // .then(resp => {
+            //     const {data} = resp
+            //     if(data){
+            //         localStorage.setItem('app-token', data.token)
+            //         history.push('/Categorias')
+            //     }
+            // })
             
             
-               
-            // 
+            //.then(resp => console.log(resp))
+
     }
     return ( 
       

@@ -9,8 +9,7 @@ function PageMenu(){
     const history = useHistory();
 
     function handleLogout(){
-            api.post('organizador/logout', {
-                
+            api.get('organizador/logout', {
             }).then(() => {
                 history.push('/')
             }).catch(() => {

@@ -16,13 +16,14 @@ function PageCategorias(){
     
    
    function handleCategoria(e: FormEvent){
+        
+      
         e.preventDefault();
         api.post('categoria',  {
             categoria,
             descricao,
             imagem,
-        },{withCredentials: true}).then(() => {
-            
+        }).then(() => {
             alert('Categoria criada com sucesso!');
         }).catch(() => {
             alert('Erro no cadastro!');
@@ -53,8 +54,7 @@ function PageCategorias(){
                             <p>
                                 <label htmlFor="">Imagem Categoria:</label>
                                 <input name="imagem" type="file" value={imagem} onChange={(e) => {setImagem (e.target.value)}}/>
-                            </p>
-                         
+                            </p> 
                             <button className="btn_evento2" type="submit">Salvar</button>
                             <button className="btn_evento2">Cancelar</button> 
                         </form>    
