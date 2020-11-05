@@ -5,6 +5,7 @@ import '../../assets/styles/global.css';
 import PageLongin from '../../components/PageLoginImg';
 import api from '../../services/api';
 import cookie from 'react-cookie'
+import { login } from '../../services/auth';
 
 
 function Login() {
@@ -22,9 +23,12 @@ function Login() {
             email,
             senha,
             }).then(response => {
-                localStorage.setItem('token', response.data.token);
+                login(response.data.token);
                 history.push('/Categorias')
-            })
+            }).catch(() =>{
+                    alert('Usuário ou senha incorretos!')
+                }
+            )
 
             // .then(resp => {
             //     const {data} = resp

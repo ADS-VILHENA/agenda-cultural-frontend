@@ -13,22 +13,27 @@ function Organizador() {
     const [endereco, setEndereco] = useState('');
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
+    const [senha2, setSenha2] = useState('');
 
     const history = useHistory();
     function handleCreateClass(e: FormEvent){
         e.preventDefault();
-        api.post('/organizador', {
+        if(senha == senha2){
+            api.post('/organizador', {
             nome,
             telefone,
             endereco,
             email,
             senha,
-        }).then(() => {
+            }).then(() => {
             alert('Cadastro realizado com sucesso!');
             history.push('/')
         }).catch(() => {
             alert('Erro no cadastro!');
         })
+        }else{
+            alert('senhas diferentes');
+        }
     }
 
     return(
@@ -61,7 +66,7 @@ function Organizador() {
                             </p>
                             <p>
                                 <label >Confirme sua senha: </label><br></br>
-                                <input  type="password" size={100} placeholder="****************" className="form-control" />
+                                <input name="senha2" type="password" size={100} placeholder="****************" className="form-control" value={senha2} onChange={(e) =>{setSenha2 (e.target.value)}} />
                             </p>
                             <p>
                                 <button type="submit">Criar</button>
