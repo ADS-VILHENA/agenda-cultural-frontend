@@ -1,81 +1,110 @@
-.page_main_even2{
-    max-width: 1200px;  
-    display: flex;
-    flex-direction: row;
-    margin-top: 11px;
-    scroll-margin-bottom: 15px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(207, 207, 203, 0.082);
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0; 
 }
-
-#page-evento2{  
-    justify-content: center;
+body{
+    background-color: #f7f7f7;
 }
-#page-evento2 .main{
-    width: 100%;
-    
+.main_evento{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding-bottom: 200px;
 }
-#page-evento2 input{
+@media(max-width:1150px){
+    .main_evento{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+.main_91_titulo{
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    font-family: "Karla", sans-serif;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 20px;
+    color: rgb(50, 143, 248);
+    font-size: 40px;
+    border:1px solid rgb(238, 232, 232);
+    box-shadow: 1px 1px 2px 2px rgb(206, 199, 199);
+}
+@media(max-width:800px){
+    .main_91_titulo{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+.main_h2_titulo{
+    font-family: "Karla", sans-serif;
+    font-style: italic;
+    margin-top: 90px;
+    background-color: #023859;
+    background-image: linear-gradient(#023859,#02456c);
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+}
+@media(max-width:800px){
+    .main_h2_titulo{
+        margin-top: 200px;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+.main_textarea{
     border-radius: 5px;
-    margin-left: 5px;
+    margin-left: 90px;
     width: 700px;
-    padding: 10px;
-    margin-top: 30px; 
+    height: 5rem;
+    min-height: 5rem;
+    margin-top: 15px; 
     border: 1px solid rgb(212, 217, 221);
     background-color: rgb(244, 245, 246);
+    resize: vertical;
+    justify-content: justify;
 }
-#page-evento2 p{
-    display: table-row;
-    
-}
-#page-evento2 label{
-    display: table-cell;
-    
-}
-#page-evento2 input{
-    display: table-cell;
-}
-#page-evento2 input:hover{
-    box-shadow: 0.1px 0.1px 0.1px 0.1px;
-    border-color: rgba(26, 85, 214, 0.52);
-    outline-color: rgb(51, 179, 230);
-}
-fieldset{
-    max-width: 1200px;
-    /* background-image: linear-gradient(to bottom, #f6ebf1, #f1e9f0, #ece6ef, #e7e4ed, #e2e2eb, #dfe1ea, #dce1e8, #dae0e6, #dae1e5, #dae1e3, #dbe1e2, #dce1e1); */
-}
-/* legend{
-    font: 700 3.4rem Archivo;
-    color: rgb(190, 191, 194);
-    text-align: center;
-    margin-bottom: 8px;
-    font-family: Arial, Helvetica, sans-serif;
-}  */
-
-.top{
-    margin-top: -270px;
-}
-.t{
-    /* background-image: linear-gradient(to bottom, #f6ebf1, #f1e9f0, #ece6ef, #e7e4ed, #e2e2eb, #dfe1ea, #dce1e8, #dae0e6, #dae1e5, #dae1e3, #dbe1e2, #dce1e1); */
-    width: 100%;
-    padding-left: 60px;
-    padding-right: 40px;
-    padding-top: 30px;
+.main_select{
     border-radius: 5px;
-    color: black;
+    width: 200px;
+    display: row;
+    padding: 10px;
+    border: 1px solid rgb(212, 217, 221);
+    background-color: white;
 }
-
-.page-cat{
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: oblique;
-    margin-top: 60px;
-    margin-left: 5px;
+.main_img{
+    width: 30px;
 }
-.btn_evento2{
-    align-items: center;
+.main_file{
+    display: none;
+}
+.main_file_estilizado{
+    background-color: #0b74bb;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 40px 20px;
+    margin-left: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main_file_estilizado2{
+    cursor: pointer;
+    margin-left: 25px;
+    width: 30vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media(max-width:800px){
+    .main_file_estilizado2{
+        width: 80vw;
+    }
+}
+.btn_even2{
     padding: 10px 25px 10px 25px;
     background-color: #000;
     border-radius: 4px;
@@ -83,46 +112,102 @@ fieldset{
     font-weight: bold;
     line-height: 20px;
     color: #fff;
-    margin-left: 15px;
-    margin-top: 30px;
-    margin-bottom: 24px;
+    float: right;
+    margin: 10px 15px; 
 }
-.btn_evento2:hover{
+@media(max-width:800px){
+.btn_even2{
+    width: 92%;
+    margin-right: 18px; 
+    }   
+}
+.btn_even2:hover{
     background-color: white;
     color:black;
 }
-.btn_evento2:first-of-type{
-    margin-left: 685px;
+.form_input2{
+    width: 90%;
+    margin-left: 25px;
+}
+.form_input3{
+    width: 90%;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+@media(max-width:900px){
+    .form_input3{
+        width: 50%;
+        margin-left: 30px; 
+        margin-right: -11px;
+        margin-bottom: 10px;
+        } 
+    .btn_evento3{
+        margin-right: 0px;  
+        margin-left: 0;
+        margin-top: 30px;
+        border-radius: 4px;
+        font-size: 12px;
+        height: 35px;
+        }
+    .btn_evento4{
+        margin-left: 1px;
+        margin-top: 30px;
+        border-radius: 4px;
+        font-size: 12px;
+        height: 35px;
+        }    
+}
+.form_label_teste{
+    margin-left: 25px;
+    margin-bottom: 1px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 10px;
+    color:#0b74bb;
+}
+.form_label2{
+    margin-left: 0px;
+}
+.form_label_sec{
+    width: 68%;
+    margin-right: auto;
+}
+@media(max-width:800px){
+    .form_label_sec{
+        width: 90%;
+        margin-left: 25px;
+    }
+    .form_label2{
+        margin-left: 25px;
+    }
 }
 .btn_evento3{
-    margin-left: 20px;
-    padding: 13px;
+    margin-left: 15px;  
+    margin-top: 30px;
     border-radius: 4px;
     font-size: 12px;
+    height: 35px;
 }
 .btn_evento3:hover{
     background-color: white;
     color: black;
     font-style: oblique;
 }
-
 .btn_evento4{
-    margin-left: 20px;
-    padding: 13px;
+    margin-left: 5px;
+    margin-top: 30px;
     border-radius: 4px;
     font-size: 12px;
+    height: 35px;
 }
 .btn_evento4:hover{
     background-color: white;
     color: black;
     font-style: oblique;
 }
-.form_2{
-    
-    margin-top: 80px;
-    width: 50fr;
-    margin-bottom: 40px;
-    margin-left: 60px;
-}
+
+
+
 
 

@@ -1,15 +1,13 @@
-.page_main_even{
+/* .page_main_even{
     max-width: 1200px;  
     display: flex;
     flex-direction: row;
     margin-top: 11px;
-    scroll-margin-bottom: 15px;
     align-items: center;
     justify-content: center;
     background-color: rgba(243, 243, 243, 0.075);
+    margin: 0 auto;
 }
-
-
 #page-evento .main{
     width: 100%;
     max-width: 1200px;
@@ -33,7 +31,6 @@
     border: 1px solid rgb(212, 217, 221);
     background-color: rgb(244, 245, 246);
 }
-
 #page-evento p{
     display: table-row;
 }
@@ -74,8 +71,18 @@ legend{
     margin-top: 30px;
     margin-bottom: 24px;
 }
+@media(max-width:800px){
+    .btn_evento{
+        width: 92%;
+        margin-right: 18px; 
+        }   
+    }
 .btn_evento:first-of-type{
     margin-left: 600px;
 }
+.hh{
+    max-width: 1200px;  
+    margin: 0 auto;
+} */
 
 

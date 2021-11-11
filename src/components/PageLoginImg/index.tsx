@@ -3,8 +3,10 @@ import imgta from '../../assets/LogoMatheus/LogoMatheus.png';
 import './style.css'
 function PageLongin(){
     return(
-        <div className="col-md-6 description">
-            <img src={imgta} alt="" className="imgLogo  "/>
+        <div className="description">
+            <div >
+                <img src={imgta} alt="" className="imgLogo "/>
+            </div>
         </div>
     )
 }

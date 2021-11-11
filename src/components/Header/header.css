@@ -1,5 +1,5 @@
 .imgLogoIni{
-    height: 195%;
+    height: 105%;
     float: left; 
 }
 .imgicon{
@@ -8,23 +8,17 @@
     margin-top: 15px;
 }
 .header2{
-    /* position: absolute;
-    left: 0px;
-    background-image: linear-gradient(to right top, #516ae3, #3f78e7, #3084e9, #2a8fe9, #319ae8, #2698eb, #1795ee, #0093f1, #0082f6, #006ef8, #1c56f4, #4e36eb); */
-    max-width: 1200px;
-    background-color: rgb(26, 45, 98);
+    background-color: #095394;
     width: 100%;
-    height: 40px;
-    margin-top: 130px;
+    height: 85px;
+    margin: auto;
+    display: block;
+    border-bottom:2px solid rgb(211, 211, 216);
 }
 .header_top{
     max-width: 1200px;
-    height: 40px;
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    background-color: rgb(26, 45, 98); 
-    /* background-color:#0b201cc4;*/
+    height: 80px;
+    margin: 0 auto;
 }
 .teste{
     float: right;
@@ -36,11 +30,3 @@
     text-align: center;
 }
 
-@media(max-width:700px){
-    .imgLogoIni{
-        width: 15rem;
-        height: 50%;
-        float: left; 
-       
-    }
-}

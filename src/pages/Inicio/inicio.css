@@ -127,3 +127,8 @@
 .main_section:hover {
     border-color: crimson;
 }
+
+.hh{
+    max-width: 1200px;  
+    margin: 0 auto;
+}

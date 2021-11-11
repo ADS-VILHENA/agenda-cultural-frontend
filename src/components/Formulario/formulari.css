@@ -1,0 +1,21 @@
+.login-btn{
+    padding: 13px 20px 12px;
+      background-color: #000;
+      border-radius: 4px;
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 20px;
+      color: #fff;
+      margin-bottom: 18px;
+}
+.login-btn:hover{
+    color: black;
+    background-color: white;
+}
+
+@media(max-width:800px){
+    .teste{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

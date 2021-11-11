@@ -5514,6 +5514,11 @@ internal-slot@^1.0.2:
     has "^1.0.3"
     side-channel "^1.0.2"
 
+intro.js@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/intro.js/-/intro.js-4.3.0.tgz#39d072e638eae9c8491e225b8565ad63b6aaf1f7"
+  integrity sha512-F4LXM42QIXcO3/2myGBBFdbbUVUK0lBhK7pAxPLd082u+3HfvigFR+Rptqy05q3OzjG/O0vMFDedrnHdSPi2rQ==
+
 invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
@@ -8930,6 +8935,11 @@ react-scripts@3.4.3:
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.1.2"
+
+react-testing-library@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/react-testing-library/-/react-testing-library-8.0.1.tgz#b3dd43bce3fa88423cf0a23292fb819023c227cc"
+  integrity sha512-Gq4JC9r3prA4hYwo7afcbHHMFckO29+5Nrh2KblAEPuK/DWaU0bJE1vtpAgLhzhY9bBirmcgjjIHljHEwGAXKw==
 
 react-transition-group@^4.4.1:
   version "4.4.1"

@@ -1,16 +1,16 @@
 import axios from 'axios';
-import { getToken } from "./auth";
 
 const api = axios.create({
-    baseURL: 'https://agenda-cultural-vilhena.herokuapp.com/',
+    // baseURL: 'http://localhost:3333/'//.
+    baseURL: 'http://localhost:3333/'
 });
 
-
 api.interceptors.request.use(async config => {
-    const token = getToken();
+    const token = localStorage.getItem('token');
     if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
+      api.defaults.headers.authorization = `Bearer ${token}`;
     }
     return config;
   });
-export default api;
+
+ export default api;

@@ -1,21 +1,17 @@
-:root{
-    font-size: 60%;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html, main, #root{
-    height: 100vh;
-}
-
-#root{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-main,input,button,textarea{
-    font: 500 1.6rem Poppins;
+.main_Titulo{
+    font-family: "Karla", sans-serif;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 20px;
+    color: rgb(50, 143, 248);
+    font-size: 40px;
+    border:1px solid rgb(238, 232, 232);
+    box-shadow: 1px 1px 2px 2px rgb(206, 199, 199);
+    max-width: 1200px;
+    font-style: italic;
+    padding: 20px;
+    border:1px solid rgb(214, 205, 205)
 }
 

@@ -1,77 +1,34 @@
 import React, { FormEvent, useState } from 'react';
-import {Link, useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom';
 import './login.css';
-import '../../assets/styles/global.css';
-import PageLongin from '../../components/PageLoginImg';
+// import '../../assets/styles/global.css';
+//import PageLongin from '../../components/PageLoginImg';
 import api from '../../services/api';
-import cookie from 'react-cookie'
-import { login } from '../../services/auth';
+//import cookie from 'react-cookie'
+import imagem from '../../assets/LogoMatheus/LogoMatheus.png';
+import { LoginUsuario } from '../../components/FormularioLogin';
+//import Form from 'react-bootstrap/Form';
+//import InputGroup from 'react-bootstrap/InputGroup';
+// import { login } from '../../services/auth';
+//import LoginParaUsuario from '../../components/LoginUsuario/LoginUsuario';
 
 
 function Login() {
-
-
-     const [email, setEmail] = useState('');
-     const [senha, setSenha] = useState('');
-
-     const history = useHistory();
-     
-    function handleSubmit(e:FormEvent) {
-        e.preventDefault();
-        
-            api.post('/organizador/login',  {
-            email,
-            senha,
-            }).then(response => {
-                login(response.data.token);
-                history.push('/Categorias')
-            }).catch(() =>{
-                    alert('Usuário ou senha incorretos!')
-                }
-            )
-
-            // .then(resp => {
-            //     const {data} = resp
-            //     if(data){
-            //         localStorage.setItem('app-token', data.token)
-            //         history.push('/Categorias')
-            //     }
-            // })
-            
-            
-            //.then(resp => console.log(resp))
-
-    }
     return ( 
-      
-        <div id="root" >
-            <main id="page-login">
-                <div className="container">
-                    <div id="page-description" className="row no-gutters">
-                        <PageLongin />
-                       
-                            <form className="container_form2"  onSubmit={handleSubmit}>               
-                                <p>
-                                    <label >Email: </label><br></br>
-                                    <input type="text" name="email" size={100} placeholder="exemplo@gmail.com" className="form-control" value={email} onChange={(e) =>{setEmail (e.target.value)}}/>
-                                </p>
-                                <p>
-                                    <label >Senha: </label><br></br>
-                                    <input type="password" name="senha" size={100} placeholder="****************" className="form-control" value={senha} onChange={(e) =>{setSenha (e.target.value)}}/>
-                                </p>
-                                <p>
-                                    <button type="submit" >Entrar</button>
-                                </p>
-                                <p >
-                                    <h2 >Não tem conta?</h2>
-                                    <Link to="/Criar">Criar conta</Link>
-                                </p>
-                            </form>
-                    </div>   
-                </div>
-            </main>
-        </div>
-        
+      <div className="d-flex align-items-center min-vh-100 py-3 py-md-0"data-testid="ID_organizador" >
+        <div className="container">
+          <div className="aling row no-gutters">
+            <div className="col-6">
+              <img src={imagem} alt="" className="imgLogo3"/>
+            </div>
+            <div >
+            <h5 className="login_Usuario3">Agenda Cultural de Vilhena</h5>
+            <h2 className="login_Usuario2">Login</h2>
+            <LoginUsuario/>
+          </div>
+        </div> 
+        </div>   
+      </div>
     )
 }    
 export default Login;

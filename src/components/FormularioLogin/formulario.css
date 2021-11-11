@@ -1,0 +1,17 @@
+.login-btn{
+    padding: 13px 20px 12px;
+      background-color: #000;
+      border-radius: 4px;
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 20px;
+      color: #fff;
+      margin-bottom: 24px;
+}
+.login-btn:hover{
+    color: black;
+    background-color: white;
+}
+.container2usuario{
+    width: 50px;
+}
