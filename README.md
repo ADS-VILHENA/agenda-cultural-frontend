@@ -1,6 +1,6 @@
 
 <h1 align="center">
-    <img alt="Agenda Cultural de Vilhena" title="#Agenda CUltural de Vilhena" src="../src/assets/../../agenda-cultural-frontend/src/assets/LogoMatheus/logoAgendaCultural.png" />
+    <img alt="Agenda Cultural de Vilhena" title="#Agenda CUltural de Vilhena" src="https://github.com/ADS-VILHENA/agenda-cultural-frontend/blob/master/src/assets/LogoMatheus/logoAgendaCultural.png" />
 </h1>
 
 <h4 align="center"> 
