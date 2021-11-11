@@ -70,11 +70,11 @@ O layout da aplicação está disponível no Figma:
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Página Cadastrar Evento"  src="../agenda-cultural-frontend/src/assets/LogoMatheus/Screenshot%20(4).png" width="600px">
+  <img alt="Página Cadastrar Evento"  src="https://github.com/ADS-VILHENA/agenda-cultural-frontend/blob/master/src/assets/LogoMatheus/Screenshot%20(4).png" width="600px">
 
 </p>
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Página Dados Organizador" src="../agenda-cultural-frontend/src/assets/LogoMatheus/Screenshot%20(7).png" width="600px">
+  <img alt="Página Dados Organizador" src="https://github.com/ADS-VILHENA/agenda-cultural-frontend/blob/master/src/assets/LogoMatheus/Screenshot%20(7).png" width="600px">
 </p>
 ---
 
