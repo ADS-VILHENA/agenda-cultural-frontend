@@ -62,7 +62,7 @@ O layout da aplicação está disponível no Figma:
 ### Mobile
 
 <p align="center">
-  <img alt="Tela Inicial" title="TelaInicial" src="../agenda-cultural-frontend/src/assets/LogoMatheus/tela%20inicial.jpg" width="150px">
+  <img alt="Tela Inicial" title="TelaInicial" src="https://github.com/ADS-VILHENA/agenda-cultural-frontend/blob/master/src/assets/LogoMatheus/tela%20inicial.jpg" width="150px">
   <img alt="Pesquisar Categorias" title="Pesquisar Categorias" src="../agenda-cultural-frontend/src/assets/LogoMatheus/mobile.jpg" width="150px">
 </p>
 
