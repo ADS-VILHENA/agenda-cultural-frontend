@@ -10,8 +10,8 @@
  <a href="./README.md#projeto">Sobre</a> •
  <a href="./README.md#funcionalidades">Funcionalidades</a> •
  <a href="./README.md#layout">Layout</a> • 
- <a href="./README.md#-como-executar-o-projeto">Como executar</a> • 
- <a href="./README.md#-tecnologias">Tecnologias</a> • 
+ <a href="./README.md#executar">Como executar</a> • 
+ <a href="./README.md#tecnologias">Tecnologias</a> • 
  <a href="./Licença">Licença</a>
 </p>
 
