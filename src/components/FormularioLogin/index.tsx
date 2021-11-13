@@ -17,21 +17,24 @@ export const LoginUsuario = () =>{
      const [senha, setSenha] = useState('');
      const history = useHistory();
      
-    function handleSubmit(e:FormEvent) {
-        e.preventDefault();
-            api.post('/organizador/login',  {
-            email,
-            senha,
-            }).then(config => {
-                    localStorage.setItem('token', config.data.token)
-                    history.push('/Categorias') 
-            }).catch(() =>{
-                    alert('Usuário ou senha incorretos!')
-                }
-            )
+    // function handleSubmit(e:FormEvent) {
+    //     e.preventDefault();
+    //         api.post('/organizador/login',  {
+    //         email,
+    //         senha,
+    //         }).then(config => {
+    //                 localStorage.setItem('token', config.data.token)
+    //                 history.push('/Categorias') 
+    //         }).catch(() =>{
+    //                 alert('Usuário ou senha incorretos!')
+    //             }
+    //         )
+    // }
+    function pagina(){ 
+      history.push('/Categorias')
     }
   return (
-    <form noValidate  onSubmit={handleSubmit} className="teste">
+    <form noValidate  /*onSubmit={handleSubmit}*/onSubmit={pagina} className="teste">
           <div className=" form-row">
            </div>
             <div className="form-row">
